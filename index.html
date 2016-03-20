@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MAP672 Portfolio Example</title>
+
+    <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+    <style>
+        header {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: steelblue;
+            padding: 15px 0 20px;
+        }
+        
+        h1 {
+            font-family: Dosis, sans-serif;
+            color: #375671;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        h2 {
+            font-family: Dosis, sans-serif;
+            color: #375671;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        body {
+            background: #f5f5f5;
+            font-family: Imprima, sans-serif;
+        }
+        
+        h3 {
+            font-family: Dosis, sans-serif;
+            color: #003d71
+        }
+        
+        p {
+            font-size: .9em;
+            color: #375671;
+        }
+        
+        ul {
+            list-style-type: none;
+            font-size: .9em;
+            color: #375671;
+            line-height: 1.6em;
+        }
+        
+        a,
+        a:visited {
+            color: #003d71;
+        }
+        
+        .project {
+            width: 80%;
+            min-width: 800px;
+            height: 100%;
+            margin: 35px auto;
+        }
+        
+        .project:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .project-image {
+            width: 388px;
+            height: 240px;
+            background: white;
+            float: left;
+            margin-right: 20px;
+            border: 2px solid #dddddd;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Digital Mapping Portfolio</h1>
+        <h2>Ray Hasenyager</h2>
+    </header>
+
+    <section class="project">
+        <a target='_blank' href="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/images/AlCraftBrewers.pdf"><img src="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/images/craft.png?raw=true" alt="Public Policy and Craft Brewing in Alabama" class="project-image" /></a>
+        <h3><a target = '_blank' href="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/maps/ALCraftBrew.pdf">Public Policy and Craft Brewing in Alabama</a></h3>
+        <p>This map was built using QGIS.</p>
+        <p>The maps show Alabama policies affecting craft brewers.</p>
+        <ul>
+            <li>See the map: <a target='_blank' href="images/AlCraftBrewers.pdf">Public Policy and Craft Brewing in Alabama</a> </li>
+            <li>Data Sources: <a href="https://www.census.gov/geo/maps-data/data/tiger.html">US Census Bureau</a>, <a href="http://abcboard.alabama.gov/">Alabama Alcoholic Beverage Control Board</a>, <a href="https://www.brewersassociation.org/">Brewers Association</a>, <a href="http://www.freethehops.org/">Free the Hops</a>, <a href="http://albeer.org/">Alabama Brewers Guild</a> </li>
+            <li>Image Source: <a href="http://www.freeimages.com">Paul Pasieczny</a>
+        </ul>
+    </section>
+
+    <section class="project">
+        <a target='_blank' href="https://rayhasenyager.cartodb.com/viz/8033755a-931b-11e5-975b-0e31c9be1b51/public_map"><img src="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/images/cancer.png?raw=true" alt="Cancer Deaths by US County" class="project-image" /></a>
+        <h3><a target = '_blank' href="https://rayhasenyager.cartodb.com/viz/8033755a-931b-11e5-975b-0e31c9be1b51/public_map">Cancer Deaths by US County</a></h3>
+        <p>The map was built using CartoDB and uses a custom CRS.</p>
+        <p>The data describe cancer rates for all cancer sites by mortality, for all races, sexes, and ages, averaged over the years of 2008 - 2012.</p>
+        <ul>
+            <li>See the map: <a target='_blank' href="https://rayhasenyager.cartodb.com/viz/8033755a-931b-11e5-975b-0e31c9be1b51/public_map">Cancer Deaths by US County</a></li>
+            <li>Data Source: <a target='_blank' href="http://www.statecancerprofiles.cancer.gov/">National Cancer Institute’s State Cancer Profiles</a> on 13 NOV 2015</li>
+        </ul>
+    </section>
+
+    <section class="project">
+        <a target='_blank' href="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/index.html"><img src="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/images/pwrplant.png?raw=true" alt="US Fossil Fuel Power Plants" class="project-image" /></a>
+        <h3><a target = '_blank' href="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/index.html">US Fossil Fuel Power Plants</a></h3>
+        <p>This map was built using Javascript and Leaflet.</p>
+        <p>It shows fossil fuel plants across the United States. By clicking on the map the user will see all indicated plants within a 500 km radius to the click point and the plant pop ups will be dsplayed when a user clicks on the plant circle. Circles indicate kilowatt output by the circle's size.</p>
+        <ul>
+            <li>See the map: <a href="https://github.com/rayhasenyager/rayhasenyager.github.io/blob/master/index.html">US Fossil Fuel Power Plants</a></li>
+            <li>Data Sources: <a href="http://www.eia.gov/electricity/data/eia923/">US Energy Information Administration</a></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
