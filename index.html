@@ -119,15 +119,15 @@
             }).addTo(map);
         }
 
-        var clickCircle = L.circle([0,0], 500000).addTo(map).bringToBack();
-       
+        var clickCircle = L.circle([0, 0], 500000).addTo(map).bringToBack();
+
         clickCircle.setStyle({
             color: '#C0C0C0',
             stroke: false,
             fillColor: '#C0C0C0',
             fillOpacity: .2
         });
-        
+
         map.on('click', function(e) {
             for (var layer in geoJsonLayers) {
                 geoJsonLayers[layer].eachLayer(function(layer) {
@@ -147,7 +147,6 @@
                             fill: true
                         });
                     }
-                    
 
                     var content = '<b>Plant Name: </b>' + layer.feature.properties.plant_name + '<br><b>Distance from mouse click: </b>' + distance.toLocaleString() + ' km<br>';
 
